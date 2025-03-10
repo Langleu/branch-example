@@ -11,4 +11,4 @@ runs:
       shell: bash
       run: |
         echo "Hello, world!"
-        echo "Version main"
+        echo "Version stable/8.6"
