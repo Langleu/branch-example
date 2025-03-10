@@ -1,0 +1,23 @@
+name: Example Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        branch:
+          - main
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        ref: ${{ matrix.branch }}
+
+    - name: Echo
+      uses: ./.github/actions/example-action

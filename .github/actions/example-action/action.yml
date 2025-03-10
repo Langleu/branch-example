@@ -1,0 +1,14 @@
+---
+name: Example Action
+
+description: |
+  This is an example action
+
+runs:
+  using: "composite"
+  steps:
+    - name: echo
+      shell: bash
+      run: |
+        echo "Hello, world!"
+        echo "Version main"
