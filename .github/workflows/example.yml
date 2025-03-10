@@ -12,6 +12,7 @@ jobs:
       matrix:
         branch:
           - main
+          - stable/8.6
 
     steps:
     - name: Checkout repository
